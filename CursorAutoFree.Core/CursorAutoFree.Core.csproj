@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Update="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.1" />
+    <PackageReference Update="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.1" />
+    <PackageReference Update="Microsoft.Extensions.Logging.Abstractions" Version="9.0.1" />
+    <PackageReference Update="Microsoft.Playwright" Version="1.49.0" />
+  </ItemGroup>
+
+</Project>

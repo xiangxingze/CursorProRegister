@@ -1,0 +1,129 @@
+# PyInstaller
+build/
+dist/
+*.spec
+!CursorKeepAlive.mac.spec
+!CursorKeepAlive.win.spec
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Mac
+.DS_Store
+
+venv/
+
+node_modules/
+
+.env
+
+## .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+.vscode/
+*.dll
+*.pdb
+*.cache
+*.log
+
+## 项目特定
+logs/
+
+# .NET Core
+*.swp
+*.*~
+project.lock.json
+.DS_Store
+*.pyc
+
+# Visual Studio Code
+.vscode
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# Visual Studio
+.vs/
+*.ncrunch*
+*.userprefs
+*.usertasks
+*.pidb
+*.resources
+test-results/
+
+# MAUI
+.mauipublish/
+.maui/
+
+# Rider
+.idea/
+
+# User-specific files
+*.rsuser
+*.sln.iml
+
+# NuGet
+*.nupkg
+# NuGet Symbol Packages
+*.snupkg
+# The packages folder can be ignored because of Package Restore
+**/[Pp]ackages/*
+# except build/, which is used as an MSBuild target.
+!**/[Pp]ackages/build/
+# Uncomment if necessary however generally it will be regenerated when needed
+#!**/[Pp]ackages/repositories.config
+# NuGet v3's project.json files produces more ignorable files
+*.nuget.props
+*.nuget.targets
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+.history/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:CursorAutoFree.UI.ViewModels"
+             x:Class="CursorAutoFree.UI.Views.MainPage"
+             x:DataType="vm:MainViewModel">
+    <ScrollView>
+        <VerticalStackLayout Spacing="15" Padding="20">
+            <Image 
+                Source="cursor_logo.png"
+                HeightRequest="100"
+                WidthRequest="100"
+                HorizontalOptions="Center" />
+                
+            <Label 
+                Text="CursorPro Register"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Frame Padding="15" Margin="0,10">
+                <VerticalStackLayout Spacing="15">
+                    <Entry 
+                        x:Name="EmailPrefixEntry"
+                        Placeholder="邮箱前缀"
+                        Text="{Binding EmailPrefix}"/>
+
+                    <Entry 
+                        x:Name="RandomNameEntry"
+                        Placeholder="邮箱随机名称"
+                        Text="{Binding RandomName}"/>
+
+                    <Entry 
+                        x:Name="UsernameEntry"
+                        Placeholder="用户名"
+                        Text="{Binding Username}"/>
+
+                    <Button 
+                        x:Name="StartButton"
+                        Text="开始"
+                        Command="{Binding StartCommand}"
+                        HorizontalOptions="Fill"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <ProgressBar 
+                Progress="{Binding Progress}"
+                HorizontalOptions="Fill"/>
+
+            <Frame Padding="15" BackgroundColor="#f5f5f5">
+                <ScrollView HeightRequest="200">
+                    <Label 
+                        Text="{Binding LogText}"
+                        LineBreakMode="WordWrap"/>
+                </ScrollView>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage> 
