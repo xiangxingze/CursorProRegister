@@ -88,10 +88,7 @@ MIT License
 
 # Cursor Pro 自动化工具使用说明
 
-README also avaiable in: [English](./README.EN.md), [Tiếng Việt](./README.VI.md)
-
-## 最近有人把软件拿到咸鱼卖的，这种事情尽量少干吧。不至于什么钱都挣。
-
+README also avaiable in: (中文./README.md)
 
 ## 许可证声明
 本项目采用 [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) 许可证。
@@ -123,50 +120,8 @@ https://github.com/xiangxingze/CursorProRegister/releases
 + 将 cloudflare 的域名邮箱转发到 tempmail.plus 邮箱。
 + 下载 .env.example 文件到程序所在根目录，并重命名为 .env 文件。
 
-
-在使用之前，需要配置环境变量文件。
-
-```bash
-DOMAIN='xxxxx.me'    # 你的邮箱域名 自行搜索如何使用 cloudflare 邮箱
-TEMP_MAIL='xxxxxx'   # 临时邮箱，就是你cloudflare 设置的目标位置 用的还是https://tempmail.plus/zh/#! 的邮箱
-```
-
-例如，如果你设置：
-```bash
-DOMAIN='niceme.me'
-TEMP_MAIL='ccxxxxcxx'
-```
-那么程序将随机生成 `@niceme.me` 后缀作为注册邮箱。
-
-
-## 运行方法
-
-### Mac 版本
-1. 打开终端，进入应用所在目录
-2. 运行命令：授权文件可以执行
-```bash
-chmod +x ./CursorPro
-```
-3. 运行程序：
-   - 在终端中运行：
-```bash
-./CursorPro
-```
-   - 或直接在访达（Finder）中双击运行
-
-
-提示：如果遇到下面的问题; [解决方案](https://sysin.org/blog/macos-if-crashes-when-opening/)
-
-
-![image](./screen/c29ea438-ee74-4ba1-bbf6-25e622cdfad5.png)
-
-
-
 ### Windows 版本
 直接双击运行 `CursorPro.exe`
-
-
-
 
 
 ## 使用注意事项
@@ -192,11 +147,3 @@ chmod +x ./CursorPro
 
 ## 免责声明
 本工具仅供学习研究使用，请遵守相关服务条款。使用本工具产生的任何后果由使用者自行承担。严禁将本工具用于任何商业用途，包括但不限于销售、租赁或其他营利行为。违反许可证条款的行为将承担相应的法律责任。
-
-## 更新日志
-- **2025-01-09** 增加了 log 日志，方便调试，增加了退出cursor，自动构建功能
-- **2025-01-10** 修改为使用 cloudflared 域名邮箱
-- **2025-01-11** 增加了可以通过 .env 文件配置 无头模式，增加了代理
-
-
-
